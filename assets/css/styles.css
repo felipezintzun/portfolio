@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #8e8d8a;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* HEADER / NAV BAR STYLES START */
+header {
+    display: flex;
+    padding: 20px 35px;
+    background-color: #eae7dc;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: #46546f
+}
+
+header nav ul li a:hover {
+    color: #e85a4f;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #46546f;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color:var(--primary-color);
+}
+/* HEADER / NAV BAR STYLES END */
+
+/* FOOTER STYLES START */
+footer {
+    background: #8e8d8a;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    color: #eae7dc;
+    font-size: 20px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #eae7dc;
+}
+/* END FOOTER STYLES */
+
+/* STYLE ALL SECTION TAGS */
+section {
+    padding: 60px;
+  }
+
+/* HERO STYLES START */
+.hero {
+    background-image: url("../images/portfolio-self.jpg");
+    background-size: cover;
+    align-items: flex-start;
+    display: flex;
+    justify-content: left; 
+    flex-wrap: wrap;
+    background-attachment: center;
+    background-position: 80%;
+}
+    
+.hero-cta {
+    width: 35%;
+    text-align: left; 
+    margin: 2%;
+    color: #fff; 
+    line-height: 1.2;
+    padding: 50px 35px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.hero-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: bold;
+    font-size: 100px;
+    color: #e85a4f;
+}
+/* HHERO STYLES END */
+
+
+/* ABOUT ME STYLES START */
+.about h2{
+    font-family: 'Playfair Display', serif;
+    color: #e98074;
+    text-align: left;
+
+}
+
+.about {
+    font-family: 'Public Sans', sans-serif;
+    color: #8e8d8a;
+    width: 80%;
+    font-size: 20px;
+    margin: left;
+    text-align: left; 
+}
+/* ABOUT ME STYLES END */
+
+/* MY WORK STYLES START */
+.works {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work {
+    margin: 20px;
+    flex: 1;
+    background: #eae7dc;
+    color: #8e8d8a;
+}
+
+.work img {
+    width: 100%;
+}
+
+.work-type {
+    padding: 50px;
+    width: 100%;
+    line-height: 1.3;
+
+}
+
+.work h2 {
+    font-family: 'Playfair Display', serif;
+    color: #e98074
+}
+
+.work-type h3 {
+    font-size: 28px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    color: #e98074;
+}
+
+.work-type h4 {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.work-type p {
+    font-size: 17px;
+    padding: 20px;
+}
+
+.work button {
+    color: #eae7dc;
+    background-color: #46546f;
+    font-family: 'Public Sans', sans-serif;
+    border: none;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 10px;
+  } 
+
+.work button:hover {
+    background-color: #e85a4f;  
+}
+/* MEET THE TRAINERS END */
+
+
+/* UTILITIES */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-row {
+    display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+   header { 
+       padding-bottom: 0;
+       justify-content: center;
+       position: relative;
+   } 
+
+   header h1 {
+       width: 100%;
+       text-align: center;
+   }
+
+   header nav ul li a {
+       font-size: 20px;
+   }
+
+   footer h2, footer div {
+       text-align: center; 
+       width: 100%;
+   }
+
+   .hero-cta, .hero-form {
+       width: 100%;
+   }
+
+   .hero-cta {
+       text-align: center;
+   }
+
+   .section-title {
+       width: 80%;
+   }
+
+   .trainer {
+       flex: 0 70%;
+   }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .step h3 {
+        flex: 1 100%; 
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center; 
+        justify-content: center;
+    }
+
+    .step-img { 
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .step-text {
+        flex: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 95%;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .trainer {
+        flex: 0 100%;
+    }
